@@ -26,10 +26,32 @@
                     0 => "<img src=\"img/fool.svg\">",
                     1 => "<img src=\"img/magician.svg\">",
                     2 => "<img src=\"img/star.svg\">",
-                    3 => "<img src=\"img/world.svg\">"
+                    3 => "<img src=\"img/empress.svg\">",
+                    4 => "<img src=\"img/hangedman.svg\">",
+                    5 => "<img src=\"img/moon.svg\">",
+                    6 => "<img src=\"img/hermit.svg\">",
+                    7 => "<img src=\"img/wheel.svg\">",
+                    8 => "<img src=\"img/world.svg\">",
+                    9 => "<img src=\"img/tower.svg\">"
                 ];
-                echo $images[rand(0,3)]
+                $keywords = [
+                    0 => "<p class=\"keyword\">Beginnings, innocence, spontaneity, a free spirit</p>",
+                    1 =>"<p class=\"keyword\">Manifestation, resourcefulness, power, inspired action</p>",
+                    2 => "<p class=\"keyword\">Hope, faith, purpose, renewal, spirituality</p>",
+                    3 => "<p class=\"keyword\">Femininity, beauty, nature, nurturing, abundance</p>",
+                    4 => "<p class=\"keyword\">Pause, surrender, letting go, new perspectives</p>",
+                    5 => "<p class=\"keyword\">Illusion, fear, anxiety, subconscious, intuition</p>",
+                    6 => "<p class=\"keyword\">Soul-searching, introspection, being alone, inner guidance</p>",
+                    7 => "<p class=\"keyword\">Good luck, karma, life cycles, destiny, a turning point</p>",
+                    8 => "<p class=\"keyword\">Completion, integration, accomplishment, travel</p>",
+                    9 => "<p class=\"keyword\">Sudden change, upheaval, chaos, revelation, awakening</p>"
+                ];
+                $i = rand(0,9);
+                echo $keywords[$i];
+                echo $images[$i];
+                
             ?>
+            
             
             </section>
             <section>

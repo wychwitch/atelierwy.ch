@@ -29,10 +29,14 @@ nav{
     border-bottom: 5px var(--russian-violet) solid;
 }
 
+header img {
+    margin-bottom: 1em;
+}
 
 
 ul li{
     list-style: none;
+    
 }
 
 ul a{
@@ -40,12 +44,15 @@ ul a{
     text-decoration: none;
     color: var(--russian-violet);
     font-size: 2.5em;
+    font-family: var(--f2);
+    
 }
 
 li a{
     width: 100%;
     display: inline-block;
     padding: 0.3em;
+    
 }
 
 ul li:nth-last-of-type(even) a{
@@ -56,6 +63,7 @@ ul li:nth-last-of-type(even) a{
 header ul{
     padding:0;
     display: none;
+    
 }
 
 header #menuButton:checked + ul{
@@ -68,9 +76,6 @@ nav{
     top: 0;
 }
 
-header img{
-    margin-top: 7em;
-}
 
 p{
     color: var(--russian-violet);
@@ -95,24 +100,27 @@ header{
     text-align: center;
 }
 
-header p{
+.keyword{
+    margin-top: 7em;
     padding: 0;
     font-style: italic;
-    font-size: 1.3em;
+    font-size: 1em;
+    margin-bottom: 0;
 }
 
-h1{
+section h1{
     font-family: var(--f7);
     color: var(--russian-violet);
     margin: 0;
+    font-size: 4em;
 }
 
 header section{
-    width: 70%;
+    width: 90%;
 }
 
 main section{
-    width:70%;
+    width:90%;
     background-color: var(--glossy-grape);
 }
 
