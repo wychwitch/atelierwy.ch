@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Concert+One&family=Cutive+Mono&family=Dosis:wght@500&family=Fredoka&family=Nunito&family=Supermercado+One&display=swap');
+
+:root{
+    --bg: #e0c8ea;
+    --mainColor: #4e3d57;
+
+    --russian-violet: #4e3d57;
+    --glossy-grape: hsla(282, 23%, 70%, 1);
+    --sectiondarker: hsla(282, 13%, 60%, 1);
+    --blue-bell: hsla(246, 56%, 73%, 1);
+    --orchid: hsla(310, 56%, 62%, 1);
+    --thistle: hsla(282, 45%, 85%, 1);
+
+    --f1: 'Caveat', cursive;
+
+    --f2: 'Concert One', cursive;
+
+    --f3: 'Cutive Mono', monospace;
+
+    --f4: 'Dosis', sans-serif;
+
+    --f5: 'Fredoka', sans-serif;
+
+    --f6: 'Nunito', sans-serif;
+
+    --f7: 'Supermercado One', cursive;
+}

@@ -1,2 +1,127 @@
+@import url(variables.css);
+
 *{box-sizing: border-box;}
 
+body{
+    background-color: var(--thistle);
+
+}
+
+header input{
+    display: none;
+}
+
+header nav{
+    background-color: var(--glossy-grape);
+    width: 100%;
+}
+
+header .iconify{
+    margin-left: 60%;
+    cursor: pointer;
+}
+
+header ul{
+    margin: 0;
+}
+
+nav{
+    border-bottom: 5px var(--russian-violet) solid;
+}
+
+
+
+ul li{
+    list-style: none;
+}
+
+ul a{
+    color: unset;
+    text-decoration: none;
+    color: var(--russian-violet);
+    font-size: 2.5em;
+}
+
+li a{
+    width: 100%;
+    display: inline-block;
+    padding: 0.3em;
+}
+
+ul li:nth-last-of-type(even) a{
+    background-color: var(--sectiondarker);
+}
+
+
+header ul{
+    padding:0;
+    display: none;
+}
+
+header #menuButton:checked + ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+}
+
+header img{
+    margin-top: 7em;
+}
+
+p{
+    color: var(--russian-violet);
+    font-family: var(--f6);
+    font-size: 1.6em;
+    line-height: 1.6em;
+    font-weight: 600;
+    padding: 0.2em 1em;
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+}
+
+header p{
+    padding: 0;
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+h1{
+    font-family: var(--f7);
+    color: var(--russian-violet);
+    margin: 0;
+}
+
+header section{
+    width: 70%;
+}
+
+main section{
+    width:70%;
+    background-color: var(--glossy-grape);
+}
+
+main section:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section:last-of-type{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
