@@ -4,8 +4,9 @@
 
 body{
     background-color: var(--thistle);
-
+    margin:0;
 }
+
 
 header input{
     display: none;
@@ -16,8 +17,12 @@ header nav{
     width: 100%;
 }
 
+header{
+    text-align: center;
+}
+
 header .iconify{
-    margin-left: 60%;
+    margin-left: 80%;
     cursor: pointer;
 }
 
@@ -48,7 +53,7 @@ ul a{
     
 }
 
-li a{
+header li a{
     width: 100%;
     display: inline-block;
     padding: 0.3em;
@@ -93,11 +98,12 @@ main{
     align-items: center;
 }
 
-header{
+#card{
     display: flex;
     flex-flow: column;
     align-items: center;
     text-align: center;
+    
 }
 
 .keyword{
@@ -115,13 +121,9 @@ section h1{
     font-size: 4em;
 }
 
-header section{
-    width: 90%;
-}
 
 main section{
     width:90%;
-    background-color: var(--glossy-grape);
 }
 
 main section:first-of-type{
@@ -132,4 +134,85 @@ main section:first-of-type{
 main section:last-of-type{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+@media (min-width: 1080px){
+    #flexBox{
+        display: flex;
+        flex-flow: column wrap;
+        place-items: center;
+        margin: auto;
+    }
+    header ul li:nth-last-of-type(even) a{
+        background-color: unset;
+    }
+    header ul a:hover{
+        outline: 3px solid var(--russian-violet);
+    }
+    header section{
+        width: 20%;
+    }
+
+    header nav{
+        position: relative;
+    }
+
+    label[for="menuButton"]{
+        display: none;
+    }
+    header{
+        display: block
+    }
+
+    header ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+
+    header li a{
+        display: inline;
+        width: 20%;
+    }
+
+    header nav li{
+        display: inline;
+        width: 1%;
+    }
+    
+    header nav {
+        background-color: unset;
+        border-bottom: none;
+    }
+
+    main section{
+        width: 45%;
+    }
+
+    main{
+        flex-flow: row;
+        justify-content: space-around;
+    }
+
+    main section:first-of-type{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    main section:last-of-type{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    main section{
+        margin:0;
+        border-radius: 10px;
+    }
+
+    main{
+        margin: 2% 5%;
+        background-color: var(--glossy-grape);
+    }
 }
