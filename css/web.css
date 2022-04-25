@@ -88,7 +88,7 @@ p{
     font-size: 1.6em;
     line-height: 1.6em;
     font-weight: 600;
-    padding: 0.2em 1em;
+
 }
 
 main{
@@ -96,6 +96,7 @@ main{
     flex-flow: column;
     justify-content: space-around;
     align-items: center;
+    margin: 0 1em;
 }
 
 #card{
@@ -112,6 +113,18 @@ main{
     font-style: italic;
     font-size: 1em;
     margin-bottom: 0;
+}
+
+h2{
+    font-family: var(--f7);
+    color: var(--russian-violet);
+    margin: 0;
+    font-size: 3em;
+}
+
+#flexBox .title{
+    width: 90%;
+    margin: auto;
 }
 
 section h1{
@@ -136,7 +149,39 @@ main section:last-of-type{
     border-bottom-right-radius: 20px;
 }
 
+.disabled{
+    pointer-events: none;
+    color: gray;
+    text-decoration: line-through;
+}
+
+header a{
+    text-decoration: none;
+    outline: none;
+}
+
+main{
+    background-color: var(--glossy-grape);
+}
+
+main section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h3{
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--f7);
+    color: var(--russian-violet);
+}
+
+
 @media (min-width: 1080px){
+    
     #flexBox{
         display: flex;
         flex-flow: column wrap;
@@ -151,6 +196,11 @@ main section:last-of-type{
     }
     header section{
         width: 20%;
+    }
+    header section.title{
+        width: 90%;
+        margin: auto;
+        margin-top: 3%;
     }
 
     header nav{
@@ -192,8 +242,9 @@ main section:last-of-type{
     }
 
     main{
-        flex-flow: row;
+        flex-flow: row wrap;
         justify-content: space-around;
+        align-items: flex-start;
     }
 
     main section:first-of-type{
@@ -207,11 +258,21 @@ main section:last-of-type{
     }
 
     main section{
-        margin:0;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        margin:2%;
         border-radius: 10px;
+        height:50em;
+    }
+    main section img{
+        margin-top: 10%;
     }
 
+
+    
     main{
+        border-radius: 20px;
         margin: 2% 5%;
         background-color: var(--glossy-grape);
     }
