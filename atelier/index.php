@@ -89,9 +89,8 @@
                 <section class="scroll-section">
                     <h2><span class="iconify" data-icon="majesticons:shooting-star-line" style="color: hsl(282, 18%, 65%);" data-rotate="90deg"></span>stickers<span class="iconify" data-icon="majesticons:shooting-star-line" style="color: hsl(282, 18%, 65%);"></span></h2>
                     <section class="overflow small-scroll">
-                        <img src="./img/hellyeah.gif">
-                        <img src="./img/skelebons.gif">
-                        <img src="./img/hellyeah.gif">
+                        <p>This is where I'll put all my buttons, banners, and more for folks to scroll through!</p>
+                        <br><br><br><br>
                         <img src="./img/skelebons.gif">
                     </section>
                 </section>
