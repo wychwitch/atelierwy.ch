@@ -83,7 +83,7 @@
         <section id=scroll-flex>
                 <section class="scroll-section">
                     <h2><span class="iconify" data-icon="majesticons:shooting-star" style="color: hsl(282, 18%, 65%);"></span>rss<span class="iconify" data-icon="majesticons:shooting-star" style="color: hsl(282, 18%, 65%);" data-rotate="90deg"></span></h2>
-                    <iframe id="updates-frame" src="https://atelierwy.ch/rss-display.php"></iframe>
+                    <iframe id="updates-frame" src="./rss-display.php"></iframe>
                 </section>
 
                 <section class="scroll-section">
