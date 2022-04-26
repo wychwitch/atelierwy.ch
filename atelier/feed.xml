@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://atelierwy.ch/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Atelier de Wych</title>
+    <link>https://atelierwy.ch</link>
+    <description>bippidi boppidi boo ~*</description>
+    <language>en-us</language>    
+
+    <item>
+    <title>New Page: odds and ends!</title>
+    <pubDate>TUE, 26 Apr 2021 12:20:00 CST</pubDate>
+    <link>https://atelierwy.ch/odds-and-ends/</link>
+    <guid>https://atelierwy.ch/odds-and-ends/</guid>
+    <description>I made a new page!! This is going to keep random odds and ends, and rn I have the pallet I use on this site there! (I may rename it later...)</description>
+    </item>
+
+    <item>
+    <title>Atelier de Wych</title>
+    <pubDate>TUE, 26 Apr 2021 09:45:00 CST</pubDate>
+    <link>https://atelierwy.ch</link>
+    <guid>https://atelierwy.ch</guid>
+    <description>Hello world! This is my first rss and I'm still figuring this out lmaoo but I also updated the front page with a sticker box!! Site links and badges will go here once I ask people for some ^^</description>
+    </item>
+
+    
+
+  </channel>
+</rss>
+
+<!-- https://learn.sadgrl.online/how-to-connect-your-static-site-to-rss/ -->

@@ -1,0 +1,386 @@
+@import url(variables.css);
+
+*{box-sizing: border-box;}
+
+body{
+    background-color: var(--dyed-white);
+    margin:0;
+}
+
+
+header input{
+    display: none;
+}
+
+header nav{
+    background-color: var(--pale-violet);
+    width: 100%;
+}
+
+header{
+    text-align: center;
+}
+
+header nav .iconify{
+    margin-left: 70%;
+    cursor: pointer;
+}
+
+header ul{
+    margin: 0;
+}
+
+nav{
+    border-bottom: 5px var(--deep-violet) solid;
+}
+
+header img {
+    margin-bottom: 1em;
+}
+
+
+ul li{
+    list-style: none;
+    
+}
+
+ul a{
+    color: unset;
+    text-decoration: none;
+    color: var(--deep-violet);
+    font-size: 2.5em;
+    font-family: var(--f2);
+    
+}
+
+header li a{
+    width: 100%;
+    display: inline-block;
+    padding: 0.3em;
+    
+}
+
+ul li:nth-last-of-type(even) a{
+    background-color: var(--pale-violet-darker);
+}
+
+
+header ul{
+    padding:0;
+    display: none;
+    
+}
+
+header #menuButton:checked + ul{
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+
+p{
+    color: var(--deep-violet);
+    font-family: var(--f6);
+    font-size: 1.6em;
+    line-height: 1.6em;
+    font-weight: 600;
+
+}
+
+main{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 1em;
+}
+
+#card{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.keyword{
+    margin-top: 7em;
+    padding: 0;
+    font-style: italic;
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+h2{
+    font-family: var(--f7);
+    color: var(--deep-violet);
+    margin: 0;
+    font-size: 3em;
+}
+
+#hero-flex .title{
+    width: 90%;
+    margin: auto;
+}
+
+h1{
+    font-family: var(--f7);
+    color: var(--deep-violet);
+    margin: 0;
+    font-size: 4em;
+}
+
+
+main section{
+    width:90%;
+}
+
+main section:first-of-type{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+main section:last-of-type{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.disabled{
+    pointer-events: none;
+    color: var(--dead-violet);
+    text-decoration: line-through;
+}
+
+header a{
+    text-decoration: none;
+    outline: none;
+}
+
+main{
+    background-color: var(--pale-violet);
+}
+
+main section{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+main section h3{
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--f7);
+    color: var(--deep-violet);
+}
+
+#hero-flex{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+#scroll-flex{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+p a, h2 a{
+    text-decoration: none;
+    color: var(--deep-violet);
+    border-bottom: 4px var(--flushed-violet) solid;
+    transition: all 50ms;
+}
+p a::after, h2 a::after{
+    padding-left: 0.3em;
+    content: url('https://api.iconify.design/nimbus/link.svg?color=hsl(330%2C%2025%25%2C%2050%25)&width=30');
+}
+
+p a:hover, h2 a:hover{
+    border-bottom: 6px var(--flushed-violet) solid;
+}
+
+
+.os-theme-round-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle::before{
+    content: url('https://api.iconify.design/ph/star-four-fill.svg?color=hsl(282%2C%2018%25%2C%2065%25)');
+    transform: translate(-13%, -13%) scale(1.3);
+    background: none;
+}
+
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar:hover > .os-scrollbar-track > .os-scrollbar-handle,
+.os-theme-dark > .os-scrollbar > .os-scrollbar-track > .os-scrollbar-handle.active{
+    background: var(--pale-violet-darker);
+}
+
+
+
+
+.overflow{
+    border: 4px var(--pale-violet) solid;
+    border-radius: 20px;
+    height:10em;
+    width:100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 0;
+}
+#updates-section{
+    width:100%;
+}
+#updates-frame{
+    border: 4px var(--pale-violet) solid;
+    border-radius: 20px;
+    width:100%;
+}
+
+.scroll-section{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    width:100%;
+}
+
+main ul{
+    font-family: var(--f6);
+    font-size: 1em;
+}
+
+.overflow-x{
+    
+    overflow: scroll;
+    overflow-x: visible;
+    overflow-y: visible;
+    width: 100%;
+}
+
+.white-outline{
+    border: 2px white solid;
+}
+
+main ul li::before{
+    content: url('https://api.iconify.design/clarity/star-solid.svg?color=hsl(290%2C%2013%25%2C%2029%25)&width=30');
+    margin: 0 0 -9em 0;
+
+}
+
+.highlight-empty{
+    padding: 0.3em;
+    border-radius: 10px;
+}
+
+
+@media (min-width: 1080px){
+    
+    #hero-flex{
+        display: flex;
+        flex-flow: column wrap;
+        place-items: center;
+        margin: auto;
+    }
+    header ul li:nth-last-of-type(even) a{
+        background-color: unset;
+    }
+    header nav a{
+        transition: border 50ms;
+    }
+
+    header ul a:hover{
+        outline: 3px solid var(--pale-violet);
+        border-radius: 20px;
+    }
+    header section{
+        width: 20%;
+    }
+    header section.title{
+        width: 90%;
+        margin: auto;
+        margin-top: 3%;
+    }
+
+    header nav{
+        position: relative;
+    }
+
+    label[for="menuButton"]{
+        display: none;
+    }
+    header{
+        display: block
+    }
+
+    header ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+
+
+    header nav a{
+        display: inline;
+        width: 5%;
+        margin: 5%;
+    }
+    
+    header nav {
+        background-color: unset;
+        border-bottom: none;
+    }
+
+    main section{
+        width: 45%;
+        padding: 2em;
+        background-color: var(--pale-violet);
+        height: auto;
+    }
+
+    main{
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin: 2% 5%;
+        background-color: unset;
+    }
+
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: space-between;
+        margin:2%;
+        height:50em;
+        border-radius: 20px;
+    }
+    main section img{
+        margin-top: 10%;
+    }
+
+
+    #scroll-flex{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+
+
+    .left-scroll > .os-scrollbar-vertical{
+        left:0;
+    }
+
+    .scroll-section{
+        width: 45%;
+    }
+}
