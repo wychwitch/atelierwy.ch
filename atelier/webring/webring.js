@@ -1,5 +1,5 @@
 // this references the file that holds the webring data
-const g5v5z2 = `https://atelierwy.ch/webring/webring.json`;
+const g5v5z2 = `./webring/webring.json`;
 
 
 const k7h9k8 = document.createElement("template");
@@ -8,7 +8,6 @@ const k7h9k8 = document.createElement("template");
 k7h9k8.innerHTML = `
 <style>
 .g5v5z2-webring {
-  background-image:var(--g5v5z2-background-image);
   background-color:var(--g5v5z2-background-color);
   border:var(--g5v5z2-border);
   padding:var(--g5v5z2-padding); 
@@ -118,12 +117,11 @@ class k7v7y4 extends HTMLElement {
 
 var rootVars = `:root {
   /* background! */
-  --g5v5z2-background-image:url('https://sadgrl.online/images/bgs/tile/sparklebackground.gif');
-  --g5v5z2-background-color:#000;
-  --g5v5z2-border:5px solid aqua;
-  --g5v5z2-border-radius:5px;
+  --g5v5z2-background-color:hsl(0,50%,50%);
+  --g5v5z2-border:5px solid purple;
+  --g5v5z2-border-radius:10px;
     /* sizing */
-  --g5v5z2-width:250px;
+  --g5v5z2-width:550px;
   --g5v5z2-height:250px;
   --g5v5z2-padding:1rem;
   
@@ -142,7 +140,7 @@ var rootVars = `:root {
 
   /* text! */
   --g5v5z2-text-family:sans-serif;
-  --g5v5z2-text-color:lightblue;
+  --g5v5z2-text-color:black;
   --g5v5z2-text-size:14px;
   --g5v5z2-text-align:center;
   --g5v5z2-text-spacing:1px;
