@@ -29,50 +29,12 @@
     </head>
     <body>
         <header>
-            <nav>
-                <label for="menuButton"><span class="iconify" data-icon="fluent:text-grammar-wand-24-regular" style="color: #4e3d57;" data-flip="horizontal" data-width="60"></span></label>
-                <input type="checkbox" id="menuButton">
-                <ul>
-                    <li><a href="./">home</a></li>
-                    <li><a href="glyphs/">glyphs</a></li>
-                    <li><a href="odds-and-ends/">odds & ends</a></li>
-                    <li><a href="#" class="disabled">shrines</a></li>
-                    <li><a href="#" class="disabled">thoughts</a></li>
-                    <li><a href="./feed.xml">rss</a></li>
-                </ul>
-            </nav>
+            <?php include './bits/nav.php';?>
+        
+            
             <section id="hero-flex">
-                <a href="index.php">
-                    <?php
-                        $images = [
-                            0 => "<img src=\"img/tarot/fool.svg\">",
-                            1 => "<img src=\"img/tarot/magician.svg\">",
-                            2 => "<img src=\"img/tarot/star.svg\">",
-                            3 => "<img src=\"img/tarot/empress.svg\">",
-                            4 => "<img src=\"img/tarot/hangedman.svg\">",
-                            5 => "<img src=\"img/tarot/moon.svg\">",
-                            6 => "<img src=\"img/tarot/hermit.svg\">",
-                            7 => "<img src=\"img/tarot/wheel.svg\">",
-                            8 => "<img src=\"img/tarot/world.svg\">",
-                            9 => "<img src=\"img/tarot/tower.svg\">"
-                        ];
-                        $keywords = [
-                            0 => "<p class=\"keyword\">Beginnings, innocence, spontaneity, a free spirit</p>",
-                            1 =>"<p class=\"keyword\">Manifestation, resourcefulness, power, inspired action</p>",
-                            2 => "<p class=\"keyword\">Hope, faith, purpose, renewal, spirituality</p>",
-                            3 => "<p class=\"keyword\">Femininity, beauty, nature, nurturing, abundance</p>",
-                            4 => "<p class=\"keyword\">Pause, surrender, letting go, new perspectives</p>",
-                            5 => "<p class=\"keyword\">Illusion, fear, anxiety, subconscious, intuition</p>",
-                            6 => "<p class=\"keyword\">Soul-searching, introspection, being alone, inner guidance</p>",
-                            7 => "<p class=\"keyword\">Good luck, karma, life cycles, destiny, a turning point</p>",
-                            8 => "<p class=\"keyword\">Completion, integration, accomplishment, travel</p>",
-                            9 => "<p class=\"keyword\">Sudden change, upheaval, chaos, revelation, awakening</p>"
-                        ];
-                        $i = rand(0,9);
-                        echo $keywords[$i];
-                        
-                        echo $images[$i];
-                    ?>
+                <a href="./">
+                <?php include './bits/tarot.php';?>
                 </a>
                 <h1>Atelier de Wych</h1>
                 <p>welcome to my space.</p>
@@ -83,15 +45,15 @@
         <section id=scroll-flex>
                 <section class="scroll-section">
                     <h2><span class="iconify" data-icon="majesticons:shooting-star" style="color: hsl(282, 18%, 65%);"></span>rss<span class="iconify" data-icon="majesticons:shooting-star" style="color: hsl(282, 18%, 65%);" data-rotate="90deg"></span></h2>
-                    <iframe id="updates-frame" src="./rss-display.php"></iframe>
+                    <section class="overflow">
+                        <?php include './odds-and-ends/rss-display.php';?>
+                    </section>
                 </section>
 
                 <section class="scroll-section">
                     <h2><span class="iconify" data-icon="majesticons:shooting-star-line" style="color: hsl(282, 18%, 65%);" data-rotate="90deg"></span>stickers<span class="iconify" data-icon="majesticons:shooting-star-line" style="color: hsl(282, 18%, 65%);"></span></h2>
-                    <section class="overflow small-scroll">
-                        <p>This is where I'll put all my buttons, banners, and more for folks to scroll through!</p>
-                        <br><br><br><br>
-                        <img src="./img/skelebons.gif">
+                    <section class="overflow flip-scroll">
+                        <?php include './odds-and-ends/stickers.php';?>
                     </section>
                 </section>
             </section>
