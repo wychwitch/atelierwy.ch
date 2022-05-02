@@ -9,7 +9,7 @@
         <meta property="og:type" content="homepage" />
         <meta property="og:title" content="Atelier de Wych" />
         <meta property="og:description" content="Bididi bopidi boo" />
-        <meta property="og:image" content="https://atelierwy.ch/img/screenshot.png" />
+        <meta property="og:image" content="https://atelierwy.ch/img/screenshot.gif" />
         <meta property="twitter:card" content="summary_large_image">
         <link rel="alternate" type="application/rss+xml"href="/feed.xml" title="RSS">
         
@@ -30,8 +30,6 @@
     <body>
         <header>
             <?php include './bits/nav.php';?>
-        
-            
             <section id="hero-flex">
                 <a href="./">
                 <?php include './bits/tarot.php';?>
@@ -39,8 +37,6 @@
                 <h1>Atelier de Wych</h1>
                 <p>welcome to my space.</p>
             </section>
-            
-            
         </header>
         <section id=scroll-flex>
                 <section class="scroll-section">
